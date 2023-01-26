@@ -44,7 +44,7 @@ export default function MessageForm({currentUser}) {
   return (
     <div className='main-page-form'>
       <form onSubmit={handleSubmit}>
-        <textarea name="content" cols="42" rows="6"
+        <textarea name="content"
           placeholder='Send your message...'
           className="main-page-input"
           required maxLength='150'

@@ -13,3 +13,16 @@
   color: blue;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  .no-user-page {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+}
+@media (max-width: 300px) {
+  .no-user-page {
+    font-size: 1.2rem;
+  }
+
+}
