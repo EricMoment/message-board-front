@@ -38,7 +38,7 @@ function LogOut({currentUser, setCurrentUser}) {
   useEffect(() => {
     if (currentUser.username === 'Guest') { return navigate('/') }
     async function c() {
-      await fetch('http://localhost:5000/user/log-out', {credentials: 'include'})
+      await fetch('https://message-board-production-c3d8.up.railway.app/user/log-out', {credentials: 'include'})
       .then(async response => {
         if (!response.ok) {
           await response.json(response).then(json => console.log(json))

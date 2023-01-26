@@ -7,7 +7,7 @@ export default function UpdateForm({currentUser, focusedMsg, setPop, setFocusedM
   const navigate = useNavigate()
 
   async function confirmDelete() {
-    await fetch('http://localhost:5000/delete-message', {
+    await fetch('https://message-board-production-c3d8.up.railway.app/delete-message', {
       method: 'DELETE', //all 3 keys necessary
       body: JSON.stringify({
         message_userid: currentUser.userid,

@@ -25,7 +25,7 @@ export default function MainPage({currentUser}) {
   useEffect(() => {
     setAllMessages([])
     async function getMsgs() {
-      await fetch('http://localhost:5000')
+      await fetch('https://message-board-production-c3d8.up.railway.app/')
       .then(async response => {
         if (!response.ok) {
           await response.json(response).then(json => {

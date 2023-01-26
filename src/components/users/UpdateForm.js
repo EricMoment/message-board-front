@@ -13,7 +13,7 @@ export default function UpdateForm({currentUser, focusedMsg, setPop, setFocusedM
   const navigate = useNavigate()
   async function handleUpdate(e) {
     e.preventDefault();
-    await fetch('http://localhost:5000/update-message', {
+    await fetch('https://message-board-production-c3d8.up.railway.app/update-message', {
       method: 'PUT', //all 3 keys necessary
       body: JSON.stringify(messageToPut),
       headers: {

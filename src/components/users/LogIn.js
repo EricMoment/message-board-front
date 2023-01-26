@@ -22,7 +22,7 @@ export default function LogIn({currentUser, setCurrentUser}) {
   async function handleSubmit(e) { //post
     e.preventDefault();
     setErrMessage(' ');
-    await fetch('http://localhost:5000/user/log-in', {
+    await fetch('https://message-board-production-c3d8.up.railway.app/user/log-in', {
       method: 'POST', //all 3 keys necessary
       body: JSON.stringify(data),
       headers: {

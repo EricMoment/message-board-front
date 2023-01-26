@@ -14,7 +14,7 @@ export default function MessageForm({currentUser}) {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    await fetch('http://localhost:5000/new-message', {
+    await fetch('https://message-board-production-c3d8.up.railway.app/new-message', {
       method: 'POST', //all 3 keys necessary
       body: JSON.stringify(messageToPost),
       headers: {

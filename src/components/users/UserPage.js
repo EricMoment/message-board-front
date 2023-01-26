@@ -16,7 +16,7 @@ export default function UserPage({currentUser}) {
   useEffect(() => {
     document.title = 'User | Message Board'
     async function getUserMsgs() {
-      await fetch(`http://localhost:5000/user/` + username)
+      await fetch(`https://message-board-production-c3d8.up.railway.app/user/` + username)
       .then(async response => {
         if (!response.ok) {
           await response.json(response).then(json => { 

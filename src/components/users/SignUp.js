@@ -24,7 +24,7 @@ export default function SignUp({currentUser}) {
     setErrMessageUsername(' ')
     setErrMessagePassword(' ')
     setErrMessageConfirm(' ')
-    await fetch('http://localhost:5000/user/sign-up', {
+    await fetch('https://message-board-production-c3d8.up.railway.app/user/sign-up', {
       method: 'POST', //all 3 keys necessary
       body: JSON.stringify(data),
       headers: {
