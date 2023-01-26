@@ -43,6 +43,7 @@
   border: none;
   background-color: greenyellow;
   font-size: 1.6rem;
+  color: black;
 }
 
 .user-page-update-form-yes > button:hover,

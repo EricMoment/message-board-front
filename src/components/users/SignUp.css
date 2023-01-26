@@ -24,6 +24,7 @@ form {
   border: none;
   background-color: greenyellow;
   font-size: 1.6rem;
+  color: black;
 }
 
 .sign-up-submit > button:hover {

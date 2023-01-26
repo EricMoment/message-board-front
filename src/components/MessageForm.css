@@ -33,6 +33,7 @@
   border: none;
   background-color: greenyellow;
   font-size: 1.6rem;
+  color: black;
 }
 
 .main-page-submit > button:hover {
