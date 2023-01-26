@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from 'react'
 import './App.css';
 import Header from "./components/headfooter/Header";
@@ -18,7 +18,7 @@ function App() {
     userMessages: cookies.get('userMessages') || undefined
   })
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header currentUser={user} />
         <Routes>
           <Route exact path="/" element={<MainPage currentUser={user} />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

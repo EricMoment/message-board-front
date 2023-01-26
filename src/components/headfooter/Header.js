@@ -23,7 +23,7 @@ export default function Header({currentUser}) {
   }
   return (
     <div className='header'>
-      <a className="header-title" href="/">Forum</a>
+      <Link className="header-title" to="/">Forum</Link>
       {isLoggedin()}
     </div>
   )
